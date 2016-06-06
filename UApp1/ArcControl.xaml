@@ -1,0 +1,27 @@
+﻿<UserControl
+    x:Class="UApp1.ArcControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UApp1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="300" Name="rootControl">
+
+    <Grid Name="_mainGrid">
+
+        <Path Name="_arc" Stroke="{Binding FirstBrush, ElementName=rootControl}"
+              StrokeThickness="{Binding StrokeThickness, ElementName=rootControl}"
+              />
+        <Path Name="_arcOuterBorder" Stroke="{Binding BorderBrush, ElementName=rootControl}" StrokeThickness="2" />
+        <Path Name="_arcInnerBorder" Stroke="{Binding BorderBrush, ElementName=rootControl}" StrokeThickness="2" />
+        
+        <Path Name="_arc2" Stroke="{Binding SecondBrush, ElementName=rootControl}"
+              StrokeThickness="{Binding StrokeThickness, ElementName=rootControl}"
+              />
+        <Path Name="_arc3" Stroke="{Binding ThirdBrush, ElementName=rootControl}"
+              StrokeThickness="{Binding StrokeThickness, ElementName=rootControl}"
+              />
+    </Grid>
+</UserControl>
